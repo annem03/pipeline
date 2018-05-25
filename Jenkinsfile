@@ -9,6 +9,7 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'mvn test'
+                sh 'sleep 60'
             }
             post {
                 always {
