@@ -12,7 +12,7 @@ pipeline {
             }
             post {
                 always {
-                    junit '/var/lib/jenkins/workspace/pipeline-test/**/target/surefire-reports/*.xml'
+                    junit '/var/lib/jenkins/workspace/pipeline-test/single-module/target/surefire-reports/*.xml'
                 }
             }
         }
