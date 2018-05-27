@@ -7,6 +7,11 @@ pipeline {
             }
         }
         stage('Test') {
+            input {
+                message "should i continue"
+                ok "ok"
+                submitter "admin"
+            }
             steps {
                 sh 'mvn test'
                 sh 'sleep 60'
