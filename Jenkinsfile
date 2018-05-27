@@ -3,13 +3,13 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn -B -DskipTests clean packag'
+                sh 'mvn -B -DskipTests clean package'
             }
         }
         stage('Test') {
             steps {
                 sh 'mvn test'
-                sh 'sleep 180'
+                sh 'sleep 60'
             }
             post {
                 always {
