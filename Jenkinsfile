@@ -16,7 +16,7 @@ pipeline {
             steps {
                 sh 'mvn test'
                 sh 'sleep 60'
-                sh 'echo testing'
+                sh 'echo testing123'
             }
             post {
                 always {
